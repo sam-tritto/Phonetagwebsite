@@ -36,15 +36,7 @@ const STATUSES = [
 export default function App() {
   const [activeStatus, setActiveStatus] = useState<string | null>(null);
 
-  // When a status is selected, dim the other dots
-  const getDotColors = (): [string, string, string] => {
-    if (!activeStatus) return ["#EF4444", "#F59E0B", "#10B981"];
-    return [
-      activeStatus === 'busy' ? "#EF4444" : "#FEE2E2",
-      activeStatus === 'few-mins' ? "#F59E0B" : "#FEF3C7",
-      activeStatus === 'free' ? "#10B981" : "#D1FAE5"
-    ];
-  };
+
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col font-sans text-slate-900">
@@ -81,7 +73,6 @@ export default function App() {
           
           <PhoneTagLogo 
             className="w-48 h-48 md:w-64 md:h-64 text-slate-800 relative z-10 drop-shadow-sm transition-all duration-500 group-hover:scale-105" 
-            dotColors={getDotColors()}
           />
         </motion.div>
 
@@ -139,7 +130,7 @@ export default function App() {
       <footer className="bg-slate-900 text-slate-400 py-12 px-6 mt-12">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <PhoneTagLogo className="w-6 h-6 text-slate-300" dotColors={["#EF4444", "#F59E0B", "#10B981"]} />
+            <PhoneTagLogo className="w-6 h-6 text-slate-300" variant="white" />
             <span className="font-semibold text-slate-300">PhoneTag Inc.</span>
           </div>
           <div className="flex gap-8 text-sm">
