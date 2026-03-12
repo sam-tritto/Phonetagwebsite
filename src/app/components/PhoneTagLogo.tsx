@@ -1,6 +1,6 @@
 import React from 'react';
-import appLogo from '../../../assets/app_logo.png';
-import appLogoWhite from '../../../assets/app_logo_white.png';
+import appLogo from '../../assets/app_logo.png';
+import appLogoWhite from '../../assets/app_logo_white.png';
 
 interface PhoneTagLogoProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   variant?: 'default' | 'white';
