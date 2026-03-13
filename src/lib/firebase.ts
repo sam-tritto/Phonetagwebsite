@@ -3,7 +3,7 @@ import { getFirestore } from "firebase/firestore";
 
 // TODO: Replace with your Firebase configuration from the Firebase Console
 // These should ideally be set in a .env file
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "YOUR_API_KEY",
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "YOUR_AUTH_DOMAIN",
   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "YOUR_PROJECT_ID",
