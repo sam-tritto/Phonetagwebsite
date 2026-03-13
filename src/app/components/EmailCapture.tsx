@@ -25,7 +25,7 @@ export function EmailCapture() {
       setMessage("You're on the list! We'll be in touch soon.");
     } else {
       setStatus('error');
-      setMessage('Something went wrong. Please try again.');
+      setMessage(typeof result.error === 'string' ? result.error : 'Something went wrong. Please check your connection.');
     }
   };
 

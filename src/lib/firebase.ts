@@ -13,5 +13,16 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+let app;
+try {
+  console.log("Initializing Firebase with config:", { 
+    ...firebaseConfig, 
+    apiKey: firebaseConfig.apiKey ? "PRESENT" : "MISSING" 
+  });
+  app = initializeApp(firebaseConfig);
+  console.log("Firebase initialized successfully");
+} catch (error) {
+  console.error("Firebase initialization failed:", error);
+}
+
 export const db = getFirestore(app);
