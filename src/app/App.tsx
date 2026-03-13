@@ -293,7 +293,7 @@ export default function App() {
           </div>
           <div className="flex gap-8 text-sm font-semibold text-slate-400">
             <a href="#" className="hover:text-slate-900 transition-colors">Privacy</a>
-            <a href="#" className="hover:text-slate-900 transition-colors">Terms</a>
+            <a href="/TERMS.html" className="hover:text-slate-900 transition-colors">Terms</a>
             <a href="#" className="hover:text-slate-900 transition-colors">Twitter</a>
           </div>
           <p className="text-sm text-slate-400">© 2026. All rights reserved.</p>
