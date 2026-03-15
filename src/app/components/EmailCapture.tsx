@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { subscribeEmail } from '../../lib/emailService';
 
-export function EmailCapture() {
+export function EmailCapture({ buttonColor }: { buttonColor?: string }) {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [message, setMessage] = useState('');
@@ -63,7 +63,8 @@ export function EmailCapture() {
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="bg-slate-900 text-white px-6 py-3 rounded-xl font-semibold hover:bg-slate-800 transition-all flex items-center justify-center gap-2 group/btn disabled:opacity-70 disabled:cursor-not-allowed"
+                className={`${!buttonColor ? 'bg-slate-900' : ''} text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition-all flex items-center justify-center gap-2 group/btn disabled:opacity-70 disabled:cursor-not-allowed`}
+                style={buttonColor ? { backgroundColor: buttonColor } : {}}
               >
                 {status === 'loading' ? (
                   <Loader2 className="w-4 h-4 animate-spin" />

@@ -48,18 +48,21 @@ const STATUSES = [
 const FEATURES = [
   {
     title: "Privacy First",
-    description: "No tracking, no sharing. Your availability is shared only with the people you choose.",
+    description: "No tracking, no sharing, no strangers. Your availability is shared only with the people you know and choose.",
     icon: ShieldCheck,
+    color: '#CC5555'
   },
   {
     title: "Instant Updates",
-    description: "Rather catch up with a friend rather than listen to a podcast? One tap. Your inner circle knows the second you’re free.",
+    description: "Rather catch up with a friend than listen to a podcast? One tap. Your inner circle knows the second you’re free.",
     icon: Zap,
+    color: '#E8B84B'
   },
   {
     title: "Universal",
     description: "Android and iOS finally agree on something. Stay in sync with everyone. No usernames, no messages, just meaningful connections.",
     icon: Smartphone,
+    color: '#82B94C'
   }
 ];
 
@@ -251,7 +254,10 @@ export default function App() {
               const Icon = feature.icon;
               return (
                 <div key={idx} className="flex flex-col items-start">
-                  <div className="w-12 h-12 bg-slate-900 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-slate-200">
+                  <div 
+                    className="w-12 h-12 text-white rounded-2xl flex items-center justify-center mb-8 shadow-lg shadow-slate-200"
+                    style={{ backgroundColor: feature.color }}
+                  >
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
@@ -285,7 +291,7 @@ export default function App() {
             </p>
             
             <div className="max-w-md mx-auto relative z-10">
-              <EmailCapture />
+              <EmailCapture buttonColor="#82B94C" />
             </div>
           </motion.div>
         </div>
