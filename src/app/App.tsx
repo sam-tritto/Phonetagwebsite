@@ -23,14 +23,16 @@ const STATUSES = [
     bg: 'bg-emerald-50',
     border: 'border-emerald-200',
     icon: CheckCircle,
+    description: "Automatically lets your contacts know you're free to talk."
   },
   {
     id: 'few-mins',
-    label: 'A Few Mins',
+    label: 'Only a Few Mins Left',
     color: '#F59E0B',
     bg: 'bg-amber-50',
     border: 'border-amber-200',
     icon: Clock,
+    description: "I’m almost at work; keep it brief."
   },
   {
     id: 'busy',
@@ -39,6 +41,7 @@ const STATUSES = [
     bg: 'bg-red-50',
     border: 'border-red-200',
     icon: XCircle,
+    description: "Don't even try; I'll talk to you later."
   },
 ];
 
@@ -187,10 +190,10 @@ export default function App() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(15,118,110,0.15),transparent)]"></div>
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Simple status. Smart connections.</h2>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">Simple status. Connect with intention.</h2>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">
               Broadcast your availability to your circle in a single tap. 
-              The most efficient way to stay in touch without the noise.
+              The easiest way to stay in touch without the noise.
             </p>
           </div>
 
@@ -224,7 +227,7 @@ export default function App() {
                   </h3>
                   <div className={`w-8 h-1 rounded-full mb-4 transition-all duration-500 ${isActive ? 'bg-white opacity-100' : 'bg-white opacity-0'}`}></div>
                   <p className="text-sm text-slate-400 text-center relative z-10 leading-relaxed">
-                    Automatically lets your contacts know you're {status.label.toLowerCase()}.
+                    {status.description}
                   </p>
                   
                   {isActive && (
