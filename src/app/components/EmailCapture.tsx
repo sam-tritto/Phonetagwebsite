@@ -69,7 +69,7 @@ export function EmailCapture() {
                   <Loader2 className="w-4 h-4 animate-spin" />
                 ) : (
                   <>
-                    Join Waitlist
+                    Secure My Spot on the Waitlist
                     <Send className="w-4 h-4 transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
                   </>
                 )}
