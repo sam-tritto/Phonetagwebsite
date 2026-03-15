@@ -115,12 +115,13 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-xl md:text-2xl text-slate-900 mb-12 max-w-3xl leading-relaxed font-bold"
+            className="text-xl md:text-2xl text-slate-900 mb-12 max-w-3xl leading-relaxed"
           >
-            Real-time presence meets spontaneous conversation. 
-            <br className="hidden md:block" />
-            <span className="text-2xl md:text-4xl block mt-4">
-              Stop playing <strong>phone tag</strong>, see who's <span style={{ color: '#CC5555' }}>free</span> and <span style={{ color: '#E8B84B' }}>talk</span> <span style={{ color: '#82B94C' }}>now</span>.
+            <span className="font-extralight block mb-6">Real-time presence meets spontaneous conversation.</span>
+            <span className="text-2xl md:text-4xl font-bold block">
+              Stop playing <strong>phone tag</strong>,
+              <br />
+              see who's <span style={{ color: '#CC5555' }}>free</span> and <span style={{ color: '#E8B84B' }}>talk</span> <span style={{ color: '#82B94C' }}>now</span>.
             </span>
           </motion.p>
 
