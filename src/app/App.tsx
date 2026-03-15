@@ -52,13 +52,13 @@ const FEATURES = [
     icon: ShieldCheck,
   },
   {
-    title: "Zero Latency",
-    description: "Status updates are pushed instantly. When you change your status, the world knows.",
+    title: "Instant Updates",
+    description: "Rather catch up with a friend rather than listen to a podcast? One tap. Your inner circle knows the second you’re free.",
     icon: Zap,
   },
   {
-    title: "Cross-Platform",
-    description: "Whether you're on iOS or Android, PhoneTag keeps you in sync with everyone.",
+    title: "Universal",
+    description: "Android and iOS finally agree on something. Stay in sync with everyone. No usernames, no messages, just meaningful connections.",
     icon: Smartphone,
   }
 ];
@@ -193,7 +193,7 @@ export default function App() {
             <h2 className="text-3xl md:text-5xl font-bold mb-6">Simple status. Connect with intention.</h2>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">
               Broadcast your availability to your circle in a single tap. 
-              The easiest way to stay in touch without the noise.
+              The easiest way to stay in touch without the noise. So simple, even Grandpa can use it.
             </p>
           </div>
 
