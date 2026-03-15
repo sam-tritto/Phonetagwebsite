@@ -106,7 +106,7 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-8 max-w-5xl leading-tight"
+            className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 mb-8 max-w-5xl leading-tight"
           >
             In an ever changing world we are more connected online, but lonelier in person.
           </motion.h1>
@@ -115,10 +115,13 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-lg md:text-xl text-slate-900 mb-12 max-w-3xl leading-relaxed font-bold"
+            className="text-xl md:text-2xl text-slate-900 mb-12 max-w-3xl leading-relaxed font-bold"
           >
             Real-time presence meets spontaneous conversation. 
-            Stop playing <strong>phone tag</strong>, see who's <span style={{ color: '#CC5555' }}>free</span> and <span style={{ color: '#E8B84B' }}>talk</span> <span style={{ color: '#82B94C' }}>now</span>.
+            <br className="hidden md:block" />
+            <span className="text-2xl md:text-4xl block mt-4">
+              Stop playing <strong>phone tag</strong>, see who's <span style={{ color: '#CC5555' }}>free</span> and <span style={{ color: '#E8B84B' }}>talk</span> <span style={{ color: '#82B94C' }}>now</span>.
+            </span>
           </motion.p>
 
           <motion.div 
