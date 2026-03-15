@@ -106,19 +106,19 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-8 max-w-4xl"
+            className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-8 max-w-5xl leading-tight"
           >
-            Stop playing <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-slate-700 to-slate-500">phone tag.</span>
+            In an ever changing world we are more connected online, but lonelier in person.
           </motion.h1>
 
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-xl md:text-2xl text-slate-600 mb-12 max-w-2xl leading-relaxed"
+            className="text-lg md:text-xl text-slate-900 mb-12 max-w-3xl leading-relaxed font-bold"
           >
-            Know when your contacts are free before you call. A simple 3-status system to end the infinite "missed you" loop.
+            Real-time presence meets spontaneous conversation. 
+            Stop playing <strong>phone tag</strong>, see who's <span style={{ color: '#CC5555' }}>free</span> and <span style={{ color: '#E8B84B' }}>talk</span> <span style={{ color: '#82B94C' }}>now</span>.
           </motion.p>
 
           <motion.div 
