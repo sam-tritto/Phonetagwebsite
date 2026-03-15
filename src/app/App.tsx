@@ -12,7 +12,8 @@ import {
   Zap, 
   Smartphone,
   MessageSquareOff,
-  ArrowRight
+  ArrowRight,
+  AlertTriangle
 } from 'lucide-react';
 
 const STATUSES = [
@@ -157,12 +158,19 @@ export default function App() {
               Communication shouldn't be a game of chance. Existing social apps are noisy; PhoneTag is focused.
             </p>
             <ul className="space-y-4">
-              {['No more "is now a good time?" texts', 'Respect boundaries effortlessly', 'Deep focus without missing the important calls'].map((item, idx) => (
-                <li key={idx} className="flex items-center gap-3 text-slate-700 font-medium">
-                  <XCircle className="w-5 h-5 text-slate-300" />
-                  {item}
-                </li>
-              ))}
+              {[
+                { text: 'No more "is now a good time?" texts', icon: XCircle, color: '#CC5555' },
+                { text: 'Respect boundaries effortlessly', icon: AlertTriangle, color: '#E8B84B' },
+                { text: 'Deep focus without missing the important calls', icon: CheckCircle, color: '#82B94C' }
+              ].map((item, idx) => {
+                const Icon = item.icon;
+                return (
+                  <li key={idx} className="flex items-center gap-3 text-slate-700 font-medium">
+                    <Icon className="w-5 h-5" style={{ color: item.color }} />
+                    {item.text}
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="bg-slate-50 rounded-3xl p-8 border border-slate-200 shadow-inner relative overflow-hidden">
@@ -302,12 +310,11 @@ export default function App() {
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-3">
             <PhoneTagLogo className="w-6 h-6 text-slate-900" />
-            <span className="font-bold text-slate-900">PhoneTag Inc.</span>
+            <span className="font-bold text-slate-900">PhoneTag</span>
           </div>
           <div className="flex gap-8 text-sm font-semibold text-slate-400">
             <a href="#" className="hover:text-slate-900 transition-colors">Privacy</a>
             <a href="/TERMS.html" className="hover:text-slate-900 transition-colors">Terms</a>
-            <a href="#" className="hover:text-slate-900 transition-colors">Twitter</a>
           </div>
           <p className="text-sm text-slate-400">© 2026. All rights reserved.</p>
         </div>
