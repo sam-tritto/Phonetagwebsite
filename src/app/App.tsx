@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { PhoneTagLogo } from './components/PhoneTagLogo';
 import { EmailCapture } from './components/EmailCapture';
 import { motion } from 'motion/react';
+import User1 from '../assets/user_1.png';
+import User2 from '../assets/user_2.png';
 import { 
   Phone, 
   Users, 
@@ -177,15 +179,21 @@ export default function App() {
             <div className="absolute top-0 right-0 w-32 h-32 bg-red-100/50 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
             <div className="space-y-4 relative z-10">
               <div className="flex items-center gap-4 bg-white p-4 rounded-xl border border-slate-200 shadow-sm opacity-50 italic">
-                <div className="w-8 h-8 bg-slate-100 rounded-full"></div>
+                <div className="w-8 h-8 rounded-full overflow-hidden bg-slate-100">
+                  <img src={User2} alt="User 2" className="w-full h-full object-cover rounded-full" />
+                </div>
                 <span>"Hey, can you talk?"</span>
               </div>
               <div className="flex items-center gap-4 bg-white p-4 rounded-xl border border-slate-200 shadow-sm ml-8">
-                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-bold">ME</div>
+                <div className="w-8 h-8 rounded-full overflow-hidden bg-blue-500">
+                  <img src={User1} alt="User 1" className="w-full h-full object-cover rounded-full" />
+                </div>
                 <span>"Busy now, I'll call back at 4?"</span>
               </div>
               <div className="flex items-center gap-4 bg-white p-4 rounded-xl border border-slate-200 shadow-sm opacity-50 italic">
-                <div className="w-8 h-8 bg-slate-100 rounded-full"></div>
+                <div className="w-8 h-8 rounded-full overflow-hidden bg-slate-100">
+                  <img src={User2} alt="User 2" className="w-full h-full object-cover rounded-full" />
+                </div>
                 <span>"Missed your call. Call me?"</span>
               </div>
               <div className="text-center py-4">
