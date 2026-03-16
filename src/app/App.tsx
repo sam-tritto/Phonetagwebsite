@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { PhoneTagLogo } from './components/PhoneTagLogo';
 import { EmailCapture } from './components/EmailCapture';
 import { motion } from 'motion/react';
-import User1 from '../assets/user_1.png';
-import User2 from '../assets/user_2.png';
+import User1 from '@/assets/user_1.png';
+import User2 from '@/assets/user_2.png';
 import { 
   Phone, 
   Users, 
