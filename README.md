@@ -1,11 +1,6 @@
 
-  # Design PhoneTag Logo
+  # PhoneTag
 
-  This is a code bundle for Design PhoneTag Logo. The original project is available at https://www.figma.com/design/ERYN3rjf4Iih7846LTbvlN/Design-PhoneTag-Logo.
+This repo hosts the landing page for the phone app PhoneTag.
 
-  ## Running the code
-
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
-  
+You can visit www.phonetag.me
