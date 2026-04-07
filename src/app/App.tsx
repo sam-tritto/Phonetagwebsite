@@ -303,7 +303,7 @@ export default function App() {
             
             <h2 className="text-4xl md:text-6xl font-black mb-8 relative z-10">Ready to end the tag?</h2>
             <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto relative z-10">
-              Join the 2,000+ people waiting for a better way to communicate.
+              Join the growing waitlist for a better way to communicate.
             </p>
             
             <div className="max-w-md mx-auto relative z-10">
