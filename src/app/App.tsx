@@ -164,7 +164,7 @@ export default function App() {
               {[
                 { text: 'No more "is now a good time?" texts', icon: XCircle, color: '#CC5555' },
                 { text: 'Respect boundaries effortlessly', icon: AlertTriangle, color: '#E8B84B' },
-                { text: 'Deep focus without missing the important calls', icon: CheckCircle, color: '#82B94C' }
+                { text: 'Spontaneous conversations, zero scheduling required.', icon: CheckCircle, color: '#82B94C' }
               ].map((item, idx) => {
                 const Icon = item.icon;
                 return (
