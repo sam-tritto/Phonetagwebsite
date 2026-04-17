@@ -343,9 +343,9 @@ export default function App() {
                       </div>
                     </td>
                     <td className="py-3 px-4 md:py-4 md:px-6 text-center border-l-0" style={{ backgroundColor: '#fdf6f6' }}>
-                      <div className="font-bold text-lg text-slate-900 mb-1">$7.99 <span className="text-sm font-normal text-slate-500">/ month</span></div>
+                      <div className="font-bold text-lg text-slate-900 mb-1">$7.99 <span className="text-sm font-normal text-slate-500">/ mo</span></div>
                       <div className="text-xs text-slate-500 bg-white inline-block px-3 py-1 rounded-full border border-slate-100 shadow-sm">
-                        or <span className="font-bold text-slate-700">$59.99</span> / year
+                        or <span className="font-bold text-slate-700">$59.99</span> / yr
                       </div>
                     </td>
                   </tr>
