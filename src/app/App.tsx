@@ -385,6 +385,18 @@ export default function App() {
               </table>
             </div>
           </div>
+
+          <div className="mt-12 bg-white p-8 md:p-10 rounded-3xl border border-slate-200 shadow-sm flex flex-col md:flex-row items-start md:items-center gap-8">
+            <div className="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center shrink-0 border border-emerald-100/50 shadow-sm">
+              <ShieldCheck className="w-8 h-8" />
+            </div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-3">The PhoneTag Privacy Promise</h3>
+              <p className="text-slate-600 leading-relaxed text-sm md:text-base">
+                We only use your status and contact data to make the app work for you and your friends—<span className="font-semibold text-slate-900">we never sell your information or track you across other apps</span>. Your subscriptions are securely handled by <span className="font-semibold">RevenueCat</span>, so your payment details never even touch our servers.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
