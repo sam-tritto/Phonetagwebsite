@@ -84,6 +84,7 @@ export default function App() {
           <a href="#problem" className="hover:text-slate-900 transition-colors">The Problem</a>
           <a href="#how-it-works" className="hover:text-slate-900 transition-colors">How it Works</a>
           <a href="#features" className="hover:text-slate-900 transition-colors">Features</a>
+          <a href="#pricing" className="hover:text-slate-900 transition-colors">Pricing</a>
         </div>
         <a 
           href="#waitlist" 
@@ -283,6 +284,106 @@ export default function App() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="py-24 px-6 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Simple, transparent pricing</h2>
+            <p className="text-slate-600 text-lg">
+              Start for free, upgrade when you want more flexibility.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse min-w-[600px]">
+                <thead>
+                  <tr>
+                    <th className="w-1/3 p-6 md:p-8 bg-white border-b border-slate-200">
+                      <span className="text-lg font-bold text-slate-900">Feature</span>
+                    </th>
+                    <th className="w-1/3 p-6 md:p-8 bg-slate-50 border-b border-slate-200 border-l border-slate-200 text-center">
+                      <div className="text-xl font-bold text-slate-900">Standard</div>
+                    </th>
+                    <th className="w-1/3 p-6 md:p-8 border-b border-slate-200 border-l border-slate-200 relative text-center" style={{ backgroundColor: '#f9fdf5' }}>
+                      <div className="absolute top-0 left-0 w-full h-1" style={{ backgroundColor: '#82B94C' }}></div>
+                      <div className="text-xl font-bold text-slate-900 flex flex-col items-center gap-1">
+                        Pro
+                        <span className="text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider" style={{ backgroundColor: '#82B94C', color: 'white' }}>
+                          Recommended
+                        </span>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100">
+                  {/* Price */}
+                  <tr className="hover:bg-slate-50/50 transition-colors">
+                    <td className="p-5 md:p-6 font-semibold text-slate-900">Price</td>
+                    <td className="p-5 md:p-6 border-l border-slate-100 text-center">
+                      <div className="font-bold text-lg text-slate-900">$0 <span className="text-sm font-normal text-slate-500">/ forever</span></div>
+                    </td>
+                    <td className="p-5 md:p-6 border-l border-slate-100 text-center" style={{ backgroundColor: '#fbfdf8' }}>
+                      <div className="font-bold text-lg text-slate-900 mb-1">$1.99 <span className="text-sm font-normal text-slate-500">/ month</span></div>
+                      <div className="text-xs text-slate-500 bg-white inline-block px-3 py-1 rounded-full border border-slate-100 shadow-sm">
+                        or <span className="font-bold text-slate-700">$19.99</span> / year
+                      </div>
+                    </td>
+                  </tr>
+                  
+                  {/* Inner Circle */}
+                  <tr className="hover:bg-slate-50/50 transition-colors">
+                    <td className="p-5 md:p-6 font-semibold text-slate-900">Inner Circle</td>
+                    <td className="p-5 md:p-6 border-l border-slate-100 text-slate-600 text-center">
+                      Up to 3 Contacts
+                    </td>
+                    <td className="p-5 md:p-6 border-l border-slate-100 text-center font-medium" style={{ backgroundColor: '#fbfdf8', color: '#68943d' }}>
+                      Up to 10 Contacts
+                    </td>
+                  </tr>
+
+                  {/* Personalization */}
+                  <tr className="hover:bg-slate-50/50 transition-colors">
+                    <td className="p-5 md:p-6 font-semibold text-slate-900">Personalization</td>
+                    <td className="p-5 md:p-6 border-l border-slate-100 text-slate-600 text-center">
+                      3 Standard Statuses
+                      <div className="text-xs text-slate-400 mt-1">(busy, a few mins left, free)</div>
+                    </td>
+                    <td className="p-5 md:p-6 border-l border-slate-100 text-center font-medium" style={{ backgroundColor: '#fbfdf8', color: '#68943d' }}>
+                      Custom Status Emojis
+                    </td>
+                  </tr>
+
+                  {/* Privacy */}
+                  <tr className="hover:bg-slate-50/50 transition-colors">
+                    <td className="p-5 md:p-6 font-semibold text-slate-900">Privacy</td>
+                    <td className="p-5 md:p-6 border-l border-slate-100 text-slate-600 text-center">
+                      <div className="font-semibold text-slate-900 mb-1">Basic</div>
+                      <div className="text-sm text-slate-500 leading-relaxed">Send your availability to<br/>all 3 contacts</div>
+                    </td>
+                    <td className="p-5 md:p-6 border-l border-slate-100 text-center" style={{ backgroundColor: '#fbfdf8' }}>
+                      <div className="font-semibold text-slate-900 mb-1" style={{ color: '#68943d' }}>Select Contacts & Groups</div>
+                      <div className="text-sm opacity-80 leading-relaxed" style={{ color: '#7aab4a' }}>Choose who you’d like to notify</div>
+                    </td>
+                  </tr>
+
+                  {/* Notifications */}
+                  <tr className="hover:bg-slate-50/50 transition-colors">
+                    <td className="p-5 md:p-6 font-semibold text-slate-900">Notifications</td>
+                    <td className="p-5 md:p-6 border-l border-slate-100 text-slate-600 text-center">
+                      Receive
+                    </td>
+                    <td className="p-5 md:p-6 border-l border-slate-100 text-center font-medium" style={{ backgroundColor: '#fbfdf8', color: '#68943d' }}>
+                      Send and Receive
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
