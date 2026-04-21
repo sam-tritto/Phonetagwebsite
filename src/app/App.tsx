@@ -375,13 +375,13 @@ export default function App() {
                       Custom Status Emojis
                     </td>
                     <td className="py-3 px-4 md:py-4 md:px-6 text-center font-medium border-l-0" style={{ backgroundColor: '#fdf6f6', color: '#a03b3b' }}>
-                      Smart Scheduling<br />with AI
+                      Interactive Status Themes
                     </td>
                   </tr>
 
                   {/* Privacy */}
                   <tr className="hover:bg-slate-50/50 transition-colors">
-                    <td className="py-3 px-4 md:py-4 md:px-6 font-semibold text-slate-900">Privacy</td>
+                    <td className="py-3 px-4 md:py-4 md:px-6 font-semibold text-slate-900">Privacy & AI</td>
                     <td className="py-3 px-4 md:py-4 md:px-6 border-l border-slate-100 text-center" style={{ backgroundColor: '#fdfbf4' }}>
                       <div className="font-semibold mb-1" style={{ color: '#b98818' }}>Basic</div>
                       <div className="text-sm opacity-80 leading-relaxed" style={{ color: '#c99929' }}>Send your availability to<br/>all 3 contacts</div>
@@ -391,8 +391,8 @@ export default function App() {
                       <div className="text-sm opacity-90 leading-relaxed font-medium" style={{ color: '#7aab4a' }}>Choose who you’d like to notify</div>
                     </td>
                     <td className="py-3 px-4 md:py-4 md:px-6 text-center border-l-0" style={{ backgroundColor: '#fdf6f6' }}>
-                      <div className="font-semibold mb-1" style={{ color: '#a03b3b' }}>Blocks</div>
-                      <div className="text-sm opacity-80 leading-relaxed" style={{ color: '#b84e4e' }}>Turn off notifications from certain users</div>
+                      <div className="font-semibold mb-1" style={{ color: '#a03b3b' }}>Smart Scheduling</div>
+                      <div className="text-sm opacity-80 leading-relaxed" style={{ color: '#b84e4e' }}>AI Auto Context Availability, Ready in X</div>
                     </td>
                   </tr>
 
@@ -406,7 +406,7 @@ export default function App() {
                       Send and Receive
                     </td>
                     <td className="py-3 px-4 md:py-4 md:px-6 text-center font-medium border-l-0" style={{ backgroundColor: '#fdf6f6', color: '#a03b3b' }}>
-                      Custom Messages
+                      Custom Messages and Priority "Flash" Notifications
                     </td>
                   </tr>
                 </tbody>
