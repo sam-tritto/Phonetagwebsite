@@ -462,7 +462,7 @@ export default function App() {
             <span className="font-bold text-slate-900">PhoneTag</span>
           </div>
           <div className="flex gap-8 text-sm font-semibold text-slate-400">
-            <a href="/PRIVACY.html" className="hover:text-slate-900 transition-colors">Privacy</a>
+            <a href="https://app.termly.io/document/privacy-policy/82700da7-bcc6-4cb7-a9d8-e0d576dd0eff" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 transition-colors">Privacy</a>
             <a href="/TERMS.html" className="hover:text-slate-900 transition-colors">Terms</a>
           </div>
           <p className="text-sm text-slate-400">© 2026. All rights reserved.</p>
