@@ -464,6 +464,7 @@ export default function App() {
           <div className="flex gap-8 text-sm font-semibold text-slate-400">
             <a href="https://app.termly.io/document/privacy-policy/82700da7-bcc6-4cb7-a9d8-e0d576dd0eff" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 transition-colors">Privacy</a>
             <a href="https://app.termly.io/policy-viewer/policy.html?policyUUID=3bb3606e-321b-4713-bc32-891352460c49" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 transition-colors">Terms</a>
+            <a href="https://app.termly.io/policy-viewer/policy.html?policyUUID=c1a86168-30e5-49e2-ad04-9a61820df7fa" target="_blank" rel="noopener noreferrer" className="hover:text-slate-900 transition-colors">EULA</a>
           </div>
           <p className="text-sm text-slate-400">© 2026. All rights reserved.</p>
         </div>
